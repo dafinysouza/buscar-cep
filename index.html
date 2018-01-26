@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <link rel="shortcut icon" href="img/icon.ico" />
+    <title>Buscar Endereço</title>
+    
+    <!-- CSS -->
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+  
+  <body>
+    
+    <!-- Introdução -->
+    
+    <div class="section no-pad-bot grey darken-4 col s12 col s6" id="index-banner">    
+      <div class="container">
+        <br><br>
+        <div class="row center">
+          <i class="material-icons white-text">location_on</i>
+        </div>
+        <h2 class="header center white-text col s12">Pesquise seu endereço</h2>
+        <div class="row center">
+          <h5 class="header col s12 white-text light">Realize a consulta digitando o endereço ou cep</h5>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Formulário -->
+    
+    <div class="container">
+    <div class="row center">      
+    <form class="col s12 m12 l12 formulario" method="get" action=".">
+      <div class="input-field col s12">
+        <input placeholder="CEP" value="" id="cep" type="text" class="validate">
+        <label for="cep">CEP</label>
+      </div>
+      <div class="input-field col s12">
+        <input placeholder="RUA" id="logradouro" type="text" class="validate">
+        <label for="logradouro">RUA</label>
+      </div>
+      <div class="input-field col s12">
+        <input placeholder="CIDADE" id="localidade" type="text" class="validate">
+        <label for="#localidade">CIDADE</label>
+      </div>
+      <div class="input-field col s12">
+        <input placeholder="UF" id="uf" type="text" class="validate">
+        <label for="uf">UF</label>
+      </div>
+      
+      <div class="row center">
+        <p class="center paragrafo">Escolha sua opção de busca</p>
+      </div>
+      <button class="button green waves-effect waves-light btn" id="pesquisarCep">Pesquisar por Cep</button>
+      <button class="button green waves-effect waves-light btn" id="pesquisarEndereco">Pesquisar por Endereço</button>
+    </form>
+  </div>
+  </div>
+    
+    <!-- Parallax -->
+    
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/teste.png"></div>
+    </div>
+    
+    <!-- Footer -->
+    
+    <footer class="page-footer grey darken-4">        
+      <div class="footer-copyright">
+        <div class="container">
+          2018 © Desenvolvido por Dafiny Souza
+          <a class="grey-text text-lighten-4 right" href="https://github.com/dafinysouza" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </footer>        
+    
+    <!-- Scripts -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>
