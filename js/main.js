@@ -1,4 +1,3 @@
-
 // Materialize //
 
 $(document).ready(function() {
