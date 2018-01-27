@@ -31,7 +31,7 @@ function get(url){
       $.each(data, function(nome, info){
         $('#' + nome).val(nome === 'cep' ? info.replace(/\D/g, '') : info).attr('info', nome === 'cep' ? info.replace(/\D/g, '') : info);
       });
-      console.log('erro');
+      
     } else {
       limparDados("Não foi possivel localizar o seu Cep.");
     }
