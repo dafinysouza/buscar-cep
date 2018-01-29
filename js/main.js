@@ -63,9 +63,12 @@ $('#pesquisarCep').on('click', function(e){
   e.preventDefault();
 });
 
+// Limpar Formulário //
 
-
-
-
-
-       
+$('#limparForm').on('click', function(e){
+  $('.formulario').each(function(){
+    this.reset();
+    location.reload();
+  });
+  e.preventDefault();
+});
